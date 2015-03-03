@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/poke_hint_name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/poke_hint_lv"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/et_skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/poke_hint_skill"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_make" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back" />
+
+</LinearLayout>

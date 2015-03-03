@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.nbpcorp.mobilead.sdk.MobileADView">
+        <attr name="channel_id" format="string" />
+        <attr name="test" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="com.cauly.android.ad.AdView">
+        <attr name="appcode" format="string" />
+        <attr name="effect" format="string" />
+        <attr name="gps" format="string" />
+        <attr name="allowcall" format="boolean" />
+        <attr name="dynamicReloadInterval" format="boolean" />
+        <attr name="reloadInterval" format="integer" />
+        <attr name="threadPriority" format="integer" />
+        <attr name="bannerHeight" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="on" value="2" />
+            <enum name="onTouch" value="1" />
+            <enum name="off" value="0" />
+        </attr>
+        <attr name="fixAspectRatio" format="boolean" />
+        <attr name="aspectRatioX" format="integer" />
+        <attr name="aspectRatioY" format="integer" />
+        <attr name="imageResource" format="reference" />
+    </declare-styleable>
+
+</resources>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.fsn.cauly.CaulyAdView xmlns:app="http://schemas.android.com/apk/res/com.seokceed.mygirl"
+        android:id="@+id/ad_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:allowcall="false"
+        app:appcode="u72HJntK"
+        app:bannerHeight="Proportional"
+        app:dynamicReloadInterval="false"
+        app:effect="LeftSlide"
+        app:gps="off"
+        app:reloadInterval="20" />
+
+</LinearLayout>
