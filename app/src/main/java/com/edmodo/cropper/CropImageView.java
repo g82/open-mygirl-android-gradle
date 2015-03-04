@@ -500,16 +500,5 @@ public class CropImageView extends FrameLayout {
         mCropOverlayView.setInitialAttributeValues(mGuidelines, mFixAspectRatio, mAspectRatioX, mAspectRatioY);
     }
 
-    private void init(Context context) {
-
-        final LayoutInflater inflater = LayoutInflater.from(context);
-        final View v = inflater.inflate(R.layout.crop_image_view, this, true);
-
-        mImageView = (ImageView) v.findViewById(R.id.ImageView_image);
-
-        setImageResource(mImageResource);
-        mCropOverlayView = (CropOverlayView) v.findViewById(R.id.CropOverlayView);
-        mCropOverlayView.setInitialAttributeValues(mGuidelines, mFixAspectRatio, mAspectRatioX, mAspectRatioY);
-    }
 
 }

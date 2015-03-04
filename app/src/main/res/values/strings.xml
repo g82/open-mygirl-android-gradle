@@ -26,7 +26,7 @@
     <string name="dialog_loading">이미지 생성중&#8230;</string>
     <string name="dialog_saving">사진을 저장하고 있습니다&#8230;</string>
     <string name="dialog_select">선택하기</string>
-    <string name="howoto">언제나 짱짱 쉬운 꾸쥬워마이걸 사용법\n\n1. 사진 찍거나 가져오기\n2. 사진감상\n3. 저장하기\n4. 끄읏\n5. 친구에게 공유하기\n\n사진을 누르면 음악이 꺼집니다.</string>
+    <string name="howoto">언제나 한결같은 꾸쥬워마이걸 사용법\n\n1. 사진 찍거나 가져오기\n2. 사진감상\n3. 저장하기\n4. 친구에게 공유하기\n5. 끄읏\n\n사진을 누르면 음악이 꺼집니다.</string>
     <string name="please_mail">이 어플리케이션은\n여러분의 사랑을 받고 자랍니다.\n여러분의 빛나는 아이디어로\n더 짱짱 재미있는 어플리케이션이 될 수 있습니다!\n넘치는 사랑 잊지않겠습니다. ^^7</string>
     <string name="app_title">꾸쥬워마이걸 for Android</string>
     <string name="company">2013-2015 청량리겜팔이</string>
@@ -166,5 +166,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_crop">CropActivity</string>
+    <string name="title_activity_editor">EditorActivity</string>
 
 </resources>

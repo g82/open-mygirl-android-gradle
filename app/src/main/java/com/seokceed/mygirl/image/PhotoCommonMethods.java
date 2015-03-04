@@ -356,11 +356,55 @@ public class PhotoCommonMethods {
         }
     }
 
+    public static Bitmap decodeSampledBitmapFromUri(Context context, Uri uri,
+                                                    int reqWidth, int reqHeight) throws FileNotFoundException {
+
+        ParcelFileDescriptor descriptor = context.getContentResolver().openFileDescriptor(uri, "r");
+
+        // First decode with inJustDecodeBounds=true to check dimensions
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+
+        BitmapFactory.decodeFileDescriptor(descriptor.getFileDescriptor(), null, options);
+
+
+        // Calculate inSampleSize
+        options.inSampleSize = PhotoCommonMethods.calculateInSampleSize(options, reqWidth, reqHeight);
+
+        // Decode bitmap with inSampleSize set
+        options.inJustDecodeBounds = false;
+
+        return BitmapFactory.decodeFileDescriptor(descriptor.getFileDescriptor(), null, options);
+    }
+
+    private static int calculateInSampleSize(
+            BitmapFactory.Options options, int reqWidth, int reqHeight) {
+        // Raw height and width of image
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
+
+        if (height > reqHeight || width > reqWidth) {
+
+            final int halfHeight = height / 2;
+            final int halfWidth = width / 2;
+
+            // Calculate the largest inSampleSize value that is a power of 2 and keeps both
+            // height and width larger than the requested height and width.
+            while ((halfHeight / inSampleSize) > reqHeight
+                    && (halfWidth / inSampleSize) > reqWidth) {
+                inSampleSize *= 2;
+            }
+        }
+
+        return inSampleSize;
+    }
+
     public static File saveImageFromBitmap(Bitmap bitmap) throws IOException {
 
         FileOutputStream fos;
 
-        File bitmapFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);
+        File bitmapFile = getOutputMediaFile(MEDIA_TYPE_TEMP);
 
         fos = new FileOutputStream(bitmapFile);
 

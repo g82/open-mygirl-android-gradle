@@ -17,9 +17,7 @@ public class ExperimentalFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_experimental, container, false);
 
-
         return v;
-
 
     }
 

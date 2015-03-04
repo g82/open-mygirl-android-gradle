@@ -65,7 +65,11 @@
         </activity>
         <activity
             android:name=".CropActivity"
-            android:label="@string/title_activity_crop"></activity>
+            android:label="@string/title_activity_crop" />
+        <activity
+            android:name=".EditorActivity"
+            android:label="@string/title_activity_editor"
+            android:theme="@style/NoActionBarTheme"></activity>
     </application>
 
 </manifest>

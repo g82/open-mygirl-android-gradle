@@ -93,7 +93,7 @@ public class MainImageActivity extends Activity implements OnClickListener {
         page_create.findViewById(R.id.btn_gallery).setOnClickListener(this);
         page_create.findViewById(R.id.btn_camera).setOnClickListener(this);
         page_create.findViewById(R.id.btn_share).setOnClickListener(this);
-        page_create.findViewById(R.id.rl_info).setOnClickListener(this);
+        //page_create.findViewById(R.id.rl_info).setOnClickListener(this);
 
         iv_image = (ImageView) page_create.findViewById(R.id.iv_image);
         iv_image.setOnClickListener(this);
@@ -267,10 +267,13 @@ public class MainImageActivity extends Activity implements OnClickListener {
                 }
                 break;
 
+            /*
             case R.id.rl_info:
 //			EasyTracker.getTracker().sendEvent("user_action", "open_info", "open_info", 0l);
                 startActivity(new Intent(MainImageActivity.this, InfoActivity.class));
                 break;
+
+                */
         }
     }
 

@@ -8,9 +8,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.seokceed.mygirl.image.PhotoCommonMethods;
 
@@ -20,6 +20,7 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
 
+    public static final int REQUEST_EDIT = 2394;
     private static final String TAG = "MainActivity";
     private ViewPager mViewPager;
 
@@ -34,6 +35,12 @@ public class MainActivity extends ActionBarActivity {
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        PhotoCommonMethods.clearTempFiles();
+    }
+
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -43,29 +50,27 @@ public class MainActivity extends ActionBarActivity {
 
             // galaxy nexus     /mnt/sdcard/ITS_HERE/ITS_HERE_20150303_160348.jpg
             // lg g3       /storage/emulated/0/ITS_HERE/ITS_HERE_20150303_160448.jpg
-            Log.d(TAG, ImportImageFragement.cameraOutputFile.getPath());
-            if (data != null) {
-                String dataStr = data.getDataString();
-                Log.d(TAG, dataStr);
+
+            if (ImportImageFragement.cameraOutputFile != null) {
+                i.setData(Uri.fromFile(ImportImageFragement.cameraOutputFile));
+            } else {
+                i.setData(data.getData());
             }
 
-            //i.putExtra("imageUri", ImportImageFragement.cameraOutputFile);
-            i.setData(Uri.fromFile(ImportImageFragement.cameraOutputFile));
+            startActivityForResult(i, REQUEST_EDIT);
 
         } else if (requestCode == PhotoCommonMethods.REQ_GALLERY && resultCode == RESULT_OK) {
 
             if (data != null) {
-                String dataStr = data.getDataString();
-                Log.d(TAG, dataStr);
+                i.setData(data.getData());
+                startActivityForResult(i, REQUEST_EDIT);
             }
 
-            //i.putExtra("imageUri", data.getData());
-            i.setData(data.getData());
+        } else if (requestCode == REQUEST_EDIT && resultCode == RESULT_OK) {
+
+            Toast.makeText(this, "forwarded", Toast.LENGTH_SHORT).show();
 
         }
-
-        startActivity(i);
-
     }
 
     @Override

@@ -37,7 +37,7 @@ public class ImportImageFragement extends Fragment implements View.OnClickListen
         switch (view.getId()) {
 
             case R.id.btn_camera:
-                cameraOutputFile = PhotoCommonMethods.getOutputMediaFile(PhotoCommonMethods.MEDIA_TYPE_IMAGE);
+                cameraOutputFile = PhotoCommonMethods.getOutputMediaFile(PhotoCommonMethods.MEDIA_TYPE_TEMP);
                 PhotoCommonMethods.photoFromCamera(getActivity(), cameraOutputFile);
                 break;
 
