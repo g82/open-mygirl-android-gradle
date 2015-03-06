@@ -373,6 +373,7 @@ public class PhotoCommonMethods {
 
         // Decode bitmap with inSampleSize set
         options.inJustDecodeBounds = false;
+        options.inPreferredConfig = Bitmap.Config.RGB_565;
 
         return BitmapFactory.decodeFileDescriptor(descriptor.getFileDescriptor(), null, options);
     }

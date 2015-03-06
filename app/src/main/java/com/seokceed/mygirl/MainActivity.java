@@ -44,7 +44,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        Intent i = new Intent(this, CropActivity.class);
+        //start ContentListActivity
+
+        Intent i = new Intent(this, ContentListActivity.class);
 
         if (requestCode == PhotoCommonMethods.REQ_CAMERA && resultCode == RESULT_OK) {
 

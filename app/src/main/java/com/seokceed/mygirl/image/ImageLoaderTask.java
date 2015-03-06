@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.edmodo.cropper.CropImageView;
@@ -16,6 +17,7 @@ import java.io.FileNotFoundException;
  */
 public class ImageLoaderTask extends AsyncTask<Uri, Void, Bitmap> {
 
+    private static final String TAG = "ImageLoaderTask";
     Context mContext;
 
     ImageView mImageView;
@@ -23,9 +25,7 @@ public class ImageLoaderTask extends AsyncTask<Uri, Void, Bitmap> {
     CanvasView mCanvasView;
 
     public ImageLoaderTask(Context context, ImageView imageView) {
-
         mContext = context;
-
         mImageView = imageView;
     }
 
@@ -45,6 +45,7 @@ public class ImageLoaderTask extends AsyncTask<Uri, Void, Bitmap> {
     protected void onPostExecute(Bitmap bitmap) {
         super.onPostExecute(bitmap);
 
+
         if (bitmap != null) {
 
             if (mCropImageView != null) {
@@ -55,6 +56,8 @@ public class ImageLoaderTask extends AsyncTask<Uri, Void, Bitmap> {
                 mCanvasView.initBackground(bitmap);
             }
 
+        } else {
+            Log.d(TAG, "bitmap is null");
         }
     }
 
