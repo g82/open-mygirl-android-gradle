@@ -75,6 +75,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -96,6 +97,7 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    */
 
     private class MainPageAdapter extends FragmentPagerAdapter {
 
@@ -106,7 +108,7 @@ public class MainActivity extends ActionBarActivity {
 
             listFragments = new ArrayList<>();
             listFragments.add(new ImportImageFragement());
-            listFragments.add(new ExperimentalFragment());
+            //listFragments.add(new ExperimentalFragment());
             listFragments.add(new InfoFragment());
 
         }

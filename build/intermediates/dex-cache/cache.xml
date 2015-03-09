@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2">
+<items version="2" >
 
     <item
-        jar="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/exploded-aar/com.edmodo/cropper/1.0.1/classes.jar"
-        jumboMode="false" revision="21.1.2" sha1="66467578c335f7a6babdbe01f7f0ac63230f578e">
-        <dex
-            dex="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/pre-dexed/debug/classes-f5e439533185d9b514af3cfd6c2f5f467e113aa3.jar" />
+        jar="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\pre-dexed\debug\classes-6981869c23be2a81ec2b714fcb2502ce97aa22c9.jar" />
     </item>
     <item
-        jar="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
-        jumboMode="false" revision="21.1.2" sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex
-            dex="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/pre-dexed/debug/classes-41d25c76672abda41dcaf451607fbcef7cc3d66f.jar" />
-    </item>
-    <item jar="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/libs/CaulySDK-3.2.5.jar"
-        jumboMode="false" revision="21.1.2" sha1="ace35f0a607bf56ef0c9dceff7ec2ed9a88994dd">
-        <dex
-            dex="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/pre-dexed/debug/CaulySDK-3.2.5-2b2f4e176d2f6a3c8975ed11d75611d254126bf8.jar" />
+        jar="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-b134c96a00fb3f0e4bc09f606e49d613a99614e5.jar" />
     </item>
     <item
-        jar="/Users/gamepari/Developments/android-sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
-        jumboMode="false" revision="21.1.2" sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex
-            dex="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-1a24441981787a7f8e9d3861646fa2b82449b1ef.jar" />
+        jar="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\pre-dexed\debug\classes-9e297847a0d6d0821ff7a624364d5be3ef6065af.jar" />
     </item>
     <item
-        jar="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false" revision="21.1.2" sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex
-            dex="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-6b029857e79ceb62e77bb8957f9d875e58e2f8cd.jar" />
+        jar="D:\development\android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-a8b30753d70433edfe5a527cab6406fd40d7acd0.jar" />
     </item>
     <item
-        jar="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
-        jumboMode="false" revision="21.1.2" sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex
-            dex="/Users/gamepari/AndroidstudioProjects/MyGirl-Gradle/app/build/intermediates/pre-dexed/debug/classes-80f861c29830e57fdcba05a1fd29026abf10249d.jar" />
+        jar="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\pre-dexed\debug\classes-679d0d2e9685c5e6397baf066e140ee5bab379cd.jar" />
+    </item>
+    <item
+        jar="D:\workspace_android\open-mygirl-android-gradle\app\libs\CaulySDK-3.2.5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ace35f0a607bf56ef0c9dceff7ec2ed9a88994dd">
+        <dex dex="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\pre-dexed\debug\CaulySDK-3.2.5-d0efc285d2f79ade569082fc71481336cb96d0bf.jar" />
+    </item>
+    <item
+        jar="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\exploded-aar\com.joooonho\selectableroundedimageview\1.0.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1b915694304bc4a4003b7e7b65577b4f0b514b06">
+        <dex dex="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\pre-dexed\debug\classes-288116d8783feb87b3bb983bd9cf3f55d3f0ebd4.jar" />
+    </item>
+    <item
+        jar="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="D:\workspace_android\open-mygirl-android-gradle\app\build\intermediates\pre-dexed\debug\classes-5844cd6ae782a7bf09f9691c97989266eff69453.jar" />
     </item>
 
 </items>

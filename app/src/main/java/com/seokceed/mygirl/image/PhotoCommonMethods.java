@@ -39,9 +39,9 @@ public class PhotoCommonMethods {
     public static final int MEDIA_TYPE_VIDEO = 20002;
     public static final int MEDIA_TYPE_TEMP = 20003;
 
-    private static final String PREFIX = "ITS_HERE_";
+    private static final String PREFIX = "MyGirl_";
     private static final String TEMP_PREFIX = "TEMP_";
-    private static final String DIRECTORY_NAME = "ITS_HERE";
+    private static final String DIRECTORY_NAME = "MyGirl";
 
     public static Uri CAMERA_URI = null;
 

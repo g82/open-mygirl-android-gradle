@@ -1,12 +1,15 @@
 package com.seokceed.mygirl;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
+import com.seokceed.mygirl.image.ImageSaveTask;
 import com.seokceed.mygirl.image.PhotoCommonMethods;
 
 import java.io.File;
@@ -17,6 +20,8 @@ import java.io.File;
 public class ImportImageFragement extends Fragment implements View.OnClickListener {
 
     public static File cameraOutputFile;
+
+    private Bitmap mResultBitmap;
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -47,12 +52,16 @@ public class ImportImageFragement extends Fragment implements View.OnClickListen
 
 
             case R.id.btn_save:
+                if (mResultBitmap == null) {
+                    Toast.makeText(getActivity(), getString(R.string.need_image), Toast.LENGTH_SHORT).show();
+                } else {
+                    new ImageSaveTask(getActivity()).execute(mResultBitmap);
+                }
                 break;
 
             case R.id.btn_share:
                 break;
 
         }
-
     }
 }

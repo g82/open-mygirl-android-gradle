@@ -38,7 +38,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-
         android:text="@string/company" />
 
     <!--     <ImageView -->
@@ -77,12 +76,13 @@
     <!-- google play visible -->
 
     <RelativeLayout
+
         android:id="@+id/btn_kakao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <ImageButton
             android:id="@+id/ib_kakao"
@@ -104,6 +104,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:visibility="gone"
         android:id="@+id/btn_fb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
